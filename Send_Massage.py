@@ -18,7 +18,7 @@ class CSendQQMsg():
     # 给好友发送消息
     def sendmsg(self):
         self.setText()
-        # 找到名字为'王三'的窗口
+        # 找到名字为'xx'的窗口
         hwndQQ = win32gui.FindWindow(None, self.friendName)
         if hwndQQ == 0:
             print('未找到qq对话框')
@@ -28,7 +28,7 @@ class CSendQQMsg():
 
 
 if __name__ == '__main__':
-    friendName = 'y'
+    friendName = 'xx'
     msg = main()
     qq = CSendQQMsg(friendName, msg)
     qq.sendmsg()
