@@ -10,10 +10,10 @@ mail = MIMEMultipart()
 # 发送邮件服务器
 smtpserver = 'smtp.sina.cn'
 # 发送邮箱用户名和密码
-user = 'keep1024@sina.com'
-password = 'Fu18339800770@'
+user = 'xxxx@sina.com'
+password = 'xxxx'
 # 收件人，多个收件人用逗号隔开
-username_recv = 'keep1024@sina.com'
+username_recv = 'xxxx,xxxx'
 # 邮件正文内容
 
 mail.attach(MIMEText(str(get_weather())))
